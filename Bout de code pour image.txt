@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Disposition de photos avec grid-card</title>
+  <style>
+    .grid-card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .grid-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: #fff;
+      transition: transform 0.2s;
+    }
+
+    .grid-card:hover {
+      transform: scale(1.02);
+    }
+
+    .grid-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-card-container">
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Photo 1">
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Photo 2">
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Photo 3">
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Photo 4">
+    </div>
+    <!-- Tu peux ajouter autant de cartes que tu veux -->
+  </div>
+
+</body>
+</html>
